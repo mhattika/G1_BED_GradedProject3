@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <label for="title">Ticket title</label>
+            <h2 th:text="${ticket.title}"></h2>
+            <hr/>
+            <label for="shortDescription">Ticket Short Description</label>
+            <h4 th:text="${ticket.shortDescription}"></h4>
+            <hr />
+            <label for="createdOn">Ticket Created On</label>
+            <div th:text="${ticket.createdOn}">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
