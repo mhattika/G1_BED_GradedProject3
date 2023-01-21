@@ -60,14 +60,11 @@
 						<td th:text="${ticket.title}"></td>
 						<td th:text="${ticket.shortDescription}"></td>
 						<td th:text="${ticket.createdOn}"></td>
-						<td> 
-							<a th:href="@{/tickets/edit/{id}(id=${ticket.id})}"
-							class="btn btn-primary">Edit</a>
-							<a class="btn btn-danger"
-							th:href="@{/tickets/{id}(id=${ticket.id})}">Delete</a> 
-							<a th:href="@{tickets/view/{id}(id=${ticket.id})}"
-							class="btn btn-info">View</a>
-						</td>
+						<td><a th:href="@{/tickets/edit/{id}(id=${ticket.id})}"
+							class="btn btn-primary">Edit</a> <a class="btn btn-danger"
+							th:href="@{/tickets/{id}(id=${ticket.id})}">Delete</a> <a
+							th:href="@{tickets/view/{id}(id=${ticket.id})}"
+							class="btn btn-info">View</a></td>
 					</tr>
 				</tbody>
 			</table>
